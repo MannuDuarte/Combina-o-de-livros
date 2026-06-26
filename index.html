@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMatch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>📚 BookMatch</h1>
+
+        <p>Encontre seu próximo livro favorito.</p>
+
+        <h2>Qual gênero você prefere?</h2>
+
+        <label><input type="checkbox" value="Romance"> Romance</label><br>
+
+        <label><input type="checkbox" value="Fantasia"> Fantasia</label><br>
+
+        <label><input type="checkbox" value="Terror"> Terror</label><br>
+
+        <label><input type="checkbox" value="Suspense"> Suspense</label><br>
+        <label><input type="checkbox" value="Distopia"> Distopia</label><br>
+        <div class="tamanho-livro">
+            <h3>Qual o tamanho do livro desejado?</h3>
+            <label><input type="checkbox" value="Curto"> Curto</label><br>
+            <label><input type="checkbox" value="Médio"> Médio</label><br>
+            <label><input type="checkbox" value="Longo"> Longo</label><br>
+       
+        </div class="protagonista">
+        <h3>Qual o tipo de protagonista você prefere?</h3>
+        <label><input type="checkbox" value="Masculino"> Masculino</label><br>
+        <label><input type="checkbox" value="Feminino"> Feminino</label><br>
+        <label><input type="checkbox" value="Diversos"> Diversidade</label><br>
+        
+        <div class="Publico-alvo">
+            <h3>Qual o público alvo do livro?</h3>
+            <label><input type="checkbox" value="Infantil"> Infantil</label><br>
+            <label><input type="checkbox" value="Juvenil"> Juvenil</label><br>
+            <label><input type="checkbox" value="Adulto"> Adulto</label><br>
+        </div>
+        <button onclick="recomendar()">
+            Encontrar livros
+        </button>
+
+        <div id="resultado"></div>
+
+    </div>
+
+<script src="livros.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
