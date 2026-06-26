@@ -40,10 +40,10 @@ function recomendar() {
 
   livrosPontuados.forEach(livro => {
 
-    if (livro.pontos > 0) {
+    if (livro.pontos > 3) {
       encontrou = true;
 
-      texto += `
+      texto += `    
         <p>
           📖 ${livro.nome}<br>
           ${"⭐".repeat(livro.pontos)} (${livro.pontos})
