@@ -40,7 +40,7 @@ function recomendar() {
 
   livrosPontuados.forEach(livro => {
 
-    if (livro.pontos > 3) {
+    if (livro.pontos > 2) {
       encontrou = true;
 
       texto += `    
@@ -57,4 +57,13 @@ function recomendar() {
   }
 
   document.getElementById("resultado").innerHTML = texto;
+}
+function limparCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    checkboxes.forEach(function(checkbox) {
+        checkbox.checked = false;
+    });
+
+    document.getElementById("resultado").innerHTML = "";
 }
